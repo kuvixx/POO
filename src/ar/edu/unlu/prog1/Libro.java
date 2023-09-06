@@ -21,6 +21,10 @@ public class Libro {
         System.out.println(cadena);
     }
 
+    public int getPaginas() {
+        return paginas;
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -35,7 +39,8 @@ public class Libro {
         } else {
             System.out.println("No se puede prestar ejemplar, solo queda uno disponible");
         }
-
     }
-
+    public int getNum_Ejemplares_plestados() {
+        return num_Ejemplares_plestados;
+    }
 }

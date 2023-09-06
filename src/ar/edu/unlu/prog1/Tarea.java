@@ -1,5 +1,6 @@
 package ar.edu.unlu.prog1;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Tarea {
@@ -25,7 +26,7 @@ public class Tarea {
         this.descripcion = descripcion;
     }
 
-    public void setFecha_limite(Date fecha_limite) {
+    public void setFecha_limite(LocalDate fecha_limite) {
         this.fecha_limite = fecha_limite;
     }
 

@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Biblioteca {
-    private ArrayList<Libro> libros = new ArrayList<Libro>();
+    private static ArrayList<Libro> libros = new ArrayList<Libro>();
 
-    public void agregarLibro(){
+    public static void agregarLibro(){
         Scanner sc = new Scanner(System.in);
         String libro;
         String autor;
@@ -26,5 +26,36 @@ public class Biblioteca {
         libros.get(0).mostrarLibro();
 
     }
+    public static void cargarYCompararPaginas(){
+        agregarLibro();
+        agregarLibro();
+        libros.get(0).mostrarLibro();
+        libros.get(1).mostrarLibro();
+
+        if (libros.get(0).getPaginas() > libros.get(1).getPaginas()){
+            System.out.println("Libro 0 mas paginas");
+        } else {
+            System.out.println("Libro 1 mas paginas");
+        }
+    }
+
+    public static void prestarLibro(int indiceLibro){
+        libros.get(indiceLibro).prestar_ejemplar();
+    }
+
+    public static void mostrarPrestamos(){
+        int devolver = 0;
+        for (int i = 0; i <= libros.size(); i++){
+            devolver = devolver  + libros.get(i).getNum_Ejemplares_plestados();
+        }
+    }
+    public static void main(String[] args){
+        agregarLibro();
+        cargarYCompararPaginas();
+        prestarLibro(1);
+
+
+    }
+
 
 }
