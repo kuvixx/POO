@@ -1,4 +1,6 @@
-package ar.edu.unlu.prog1;
+package ar.edu.unlu.prog1.tp1.eje3;
+
+import ar.edu.unlu.prog1.tp1.Nodo;
 
 public class Pila {
     /*
@@ -14,11 +16,11 @@ public class Pila {
     Nodo:
     Private object dato.
      */
-    private Nodo cabeza = null;
+    private ar.edu.unlu.prog1.tp1.Nodo cabeza = null;
 
 
     public void apilar(Object dato){
-        Nodo nuevoNodo = new Nodo();
+        ar.edu.unlu.prog1.tp1.Nodo nuevoNodo = new ar.edu.unlu.prog1.tp1.Nodo();
         nuevoNodo.setDato(dato);
 
         if(cabeza == null){
@@ -40,7 +42,7 @@ public class Pila {
 
     public void desapilar(){
         if (cabeza != null) {
-            Nodo nuevoNodo = new Nodo();
+            ar.edu.unlu.prog1.tp1.Nodo nuevoNodo = new Nodo();
             nuevoNodo = cabeza.getProximo();
             cabeza = nuevoNodo;
         } else {

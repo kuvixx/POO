@@ -1,4 +1,6 @@
-package ar.edu.unlu.prog1;
+package ar.edu.unlu.prog1.tp1.eje11;
+
+import ar.edu.unlu.prog1.tp1.eje11.Palabras;
 
 import java.util.ArrayList;
 

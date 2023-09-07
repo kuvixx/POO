@@ -1,18 +1,20 @@
-package ar.edu.unlu.prog1;
+package ar.edu.unlu.prog1.tp1.eje1;
+
+import ar.edu.unlu.prog1.tp1.Nodo;
 
 public class ListaEnlazada {
-    private Nodo primero = null;
+    private ar.edu.unlu.prog1.tp1.Nodo primero = null;
     private int longitud = 0;
 
 
     public void agregar(Object dato){
-        Nodo nuevoNodo = new Nodo();
+        ar.edu.unlu.prog1.tp1.Nodo nuevoNodo = new ar.edu.unlu.prog1.tp1.Nodo();
         nuevoNodo.setDato(dato);
 
-        if(primero == null){
-            primero = nuevoNodo;
+        if(this.primero == null){
+            this.primero = nuevoNodo;
         } else {
-            Nodo nodoAux = primero;
+            ar.edu.unlu.prog1.tp1.Nodo nodoAux = this.primero;
             while (nodoAux.getProximo() != null) {
                 nodoAux = nodoAux.getProximo();
             }
@@ -22,9 +24,9 @@ public class ListaEnlazada {
     }
 
     public void agregarAlFinal(Object dato){
-        Nodo nuevoNodo = new Nodo();
+        ar.edu.unlu.prog1.tp1.Nodo nuevoNodo = new ar.edu.unlu.prog1.tp1.Nodo();
         nuevoNodo.setDato(dato);
-        Nodo nodoAux = primero;
+        ar.edu.unlu.prog1.tp1.Nodo nodoAux = this.primero;
         while (nodoAux.getProximo() != null) {
             nodoAux = nodoAux.getProximo();
         }
@@ -34,10 +36,10 @@ public class ListaEnlazada {
     }
 
     public String toString(){
-        Nodo nodoAux = primero;
+        ar.edu.unlu.prog1.tp1.Nodo nodoAux = primero;
         String acumulador = "";
         Integer i = 1;
-        if(primero == null){
+        if(this.primero == null){
             acumulador = "";
         } else {
             while (nodoAux.getProximo() != null) {
@@ -62,10 +64,10 @@ public class ListaEnlazada {
     }
 
     public boolean eliminarElemento(int iBorrar){
-        Nodo nodoAux = primero;
+        ar.edu.unlu.prog1.tp1.Nodo nodoAux = this.primero;
         Integer i = 1;
         boolean encontrado = false;
-        if(primero == null || iBorrar>this.longitud){
+        if(this.primero == null || iBorrar>this.longitud){
             return(false);
         } else {
             while (nodoAux.getProximo() != null || encontrado ) {
@@ -84,12 +86,12 @@ public class ListaEnlazada {
         return(encontrado);
     }
     public boolean insertarPosEspecifica(int pos, Object dato){
-        Nodo nodoAux = primero;
+        ar.edu.unlu.prog1.tp1.Nodo nodoAux = this.primero;
         Integer i = 1;
-        Nodo nuevoNodo = new Nodo();
+        ar.edu.unlu.prog1.tp1.Nodo nuevoNodo = new Nodo();
         nuevoNodo.setDato(dato);
         boolean insertado =false;
-        if(primero == null || pos>this.longitud){
+        if(this.primero == null || pos>this.longitud){
             return(false);
         } else {
             while (insertado) {

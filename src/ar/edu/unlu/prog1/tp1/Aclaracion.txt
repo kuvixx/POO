@@ -1,0 +1,4 @@
+Hola profesores, esto es una aclaración de que en algunos ejercicios
+el main está sobre una de las clases a utilizar para no crear nuevamente otra clase que las ejecute.
+Entiendo que de esta manera algunos elementos se vuelven estaticos pero consideré que no perjudicaban la idea del programa ni el funcionamiento.
+Saludos.

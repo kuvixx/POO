@@ -1,4 +1,4 @@
-package ar.edu.unlu.prog1;
+package ar.edu.unlu.prog1.tp1.eje2;
 
 public class NodoDoble {
 

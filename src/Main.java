@@ -1,11 +1,4 @@
-import ar.edu.unlu.prog1.Biblioteca;
-import ar.edu.unlu.prog1.Nodo;
-import ar.edu.unlu.prog1.Pila;
-import org.w3c.dom.ls.LSOutput;
-
-import java.util.ArrayList;
-import java.util.Objects;
-import java.util.Scanner;
+import ar.edu.unlu.prog1.tp1.eje6.Biblioteca;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.

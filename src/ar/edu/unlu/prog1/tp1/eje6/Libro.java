@@ -1,12 +1,12 @@
-package ar.edu.unlu.prog1;
+package ar.edu.unlu.prog1.tp1.eje6;
 
 public class Libro {
 
-    private String nombre;
-    private String autor;
-    private int paginas;
-    private int num_Ejemplares;
-    private int num_Ejemplares_plestados;
+    private String nombre = "";
+    private String autor = "";
+    private int paginas = 0;
+    private int num_Ejemplares = 0;
+    private int num_Ejemplares_plestados = 0;
 
     public void setLibro(String nombre, String autor, int paginas, int ejemplares){
         this.nombre = nombre;

@@ -1,7 +1,9 @@
-package ar.edu.unlu.prog1;
+package ar.edu.unlu.prog1.tp1.eje4;
+
+import ar.edu.unlu.prog1.tp1.Nodo;
 
 public class Cola {
-    private Nodo primero = null;
+    private ar.edu.unlu.prog1.tp1.Nodo primero = null;
 
     private int longitud = 0;
 
@@ -14,13 +16,13 @@ public class Cola {
     Mostrar(): void
      */
     public void encolar(Object dato) {
-        Nodo nuevoNodo = new Nodo();
+        ar.edu.unlu.prog1.tp1.Nodo nuevoNodo = new ar.edu.unlu.prog1.tp1.Nodo();
         nuevoNodo.setDato(dato);
 
         if(primero == null){
             primero = nuevoNodo;
         } else {
-            Nodo nodoAux = primero;
+            ar.edu.unlu.prog1.tp1.Nodo nodoAux = primero;
             while (nodoAux.getProximo() != null) {
                 nodoAux = nodoAux.getProximo();
             }

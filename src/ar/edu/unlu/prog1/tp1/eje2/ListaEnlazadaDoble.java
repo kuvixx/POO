@@ -1,4 +1,6 @@
-package ar.edu.unlu.prog1;
+package ar.edu.unlu.prog1.tp1.eje2;
+
+import ar.edu.unlu.prog1.tp1.eje2.NodoDoble;
 
 public class ListaEnlazadaDoble {
     private NodoDoble primero = null;

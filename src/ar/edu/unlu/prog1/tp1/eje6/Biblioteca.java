@@ -1,4 +1,4 @@
-package ar.edu.unlu.prog1;
+package ar.edu.unlu.prog1.tp1.eje6;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -45,14 +45,17 @@ public class Biblioteca {
 
     public static void mostrarPrestamos(){
         int devolver = 0;
-        for (int i = 0; i <= libros.size(); i++){
+        for (int i = 0; i < libros.size(); i++){
             devolver = devolver  + libros.get(i).getNum_Ejemplares_plestados();
         }
+        System.out.println(devolver);
     }
     public static void main(String[] args){
         agregarLibro();
         cargarYCompararPaginas();
         prestarLibro(1);
+        System.out.println("Cantidad de libros prestados : ");
+        mostrarPrestamos();
 
 
     }
