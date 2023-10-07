@@ -1,0 +1,12 @@
+Luego de varios meses de uso, un analista detecta que si un miembro de la Tripulación desea subir a un vuelo como pasajero, entonces debe ser dado de alta 2 veces en el sistema (una como Pasajero y otra como Tripulante).
+
+Reflexiones acerca de lo anterior:
+
+1- ¿Por qué ocurre esto?
+    Porque debido al concepto de "ES UN" , el pasajero NO ES UN tripulante y el tripulante NO ES UN pasajero.
+
+2- ¿Este problema se debe a un diseño mal realizado o es una limitación del mecanismo de herencia?
+    Es una limitación del mecanismo de herencia, pero ante una buena implementación se puede evitar.
+
+3- ¿Existe un modelo alternativo que permita superar la limitación planteada en el modelo actual?
+    Los tripulantes deberían extender de una superclase empleado.
